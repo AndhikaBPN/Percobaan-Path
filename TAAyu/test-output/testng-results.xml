@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="2" passed="1" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-10-05T10:08:41 WIB" name="Default suite" finished-at="2022-10-05T10:09:06 WIB" duration-ms="24183">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.sqa.psikotes.framework.runner.TestRunner@196a42c3]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test started-at="2022-10-05T10:08:41 WIB" name="Default test" finished-at="2022-10-05T10:09:06 WIB" duration-ms="24183">
+      <class name="com.sqa.psikotes.framework.runner.TestRunner">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:com.sqa.psikotes.framework.runner.TestRunner@196a42c3]" started-at="2022-10-05T10:08:41 WIB" name="setUpClass" finished-at="2022-10-05T10:08:42 WIB" duration-ms="530" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@22865072]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.sqa.psikotes.framework.runner.TestRunner@196a42c3]" started-at="2022-10-05T10:08:42 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-10-05T10:08:53 WIB" duration-ms="10846" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["TSMP001001 Admin buka halaman modul"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["TSMP001 Admin masuk ke halaman modul"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.sqa.psikotes.framework.runner.TestRunner@196a42c3]" started-at="2022-10-05T10:08:53 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-10-05T10:09:05 WIB" duration-ms="12355" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["TSMP009 Admin ingin membuat soal pilihan ganda"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["TSMP009 Admin membuat soal pilihan ganda"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA[unknown error: path is not absolute: .\data\kode-ascii.png
+  (Session info: chrome=106.0.5249.91)
+Build info: version: '4.4.0', revision: 'e5c75ed026a'
+System info: host: 'DESKTOP-C56VD1H', ip: '10.0.0.163', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [e5f94f568fb3d80c1478724f2d576809, sendKeysToElement {id=25f89048-549a-4ef3-a7b7-c7eddb8cb073, value=[Ljava.lang.CharSequence;@370c7cc5}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 106.0.5249.91, chrome: {chromedriverVersion: 106.0.5249.61 (511755355844..., userDataDir: C:\Users\NEXSOFT\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:51103}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:51103/devtoo..., se:cdpVersion: 106.0.5249.91, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (e5f94f568fb3d80c1478724f2d576809)] -> id: tl_template_soal--53161_text]
+Session ID: e5f94f568fb3d80c1478724f2d576809]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.WebDriverException: unknown error: path is not absolute: .\data\kode-ascii.png
+  (Session info: chrome=106.0.5249.91)
+Build info: version: '4.4.0', revision: 'e5c75ed026a'
+System info: host: 'DESKTOP-C56VD1H', ip: '10.0.0.163', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [e5f94f568fb3d80c1478724f2d576809, sendKeysToElement {id=25f89048-549a-4ef3-a7b7-c7eddb8cb073, value=[Ljava.lang.CharSequence;@370c7cc5}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 106.0.5249.91, chrome: {chromedriverVersion: 106.0.5249.61 (511755355844..., userDataDir: C:\Users\NEXSOFT\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:51103}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:51103/devtoo..., se:cdpVersion: 106.0.5249.91, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (e5f94f568fb3d80c1478724f2d576809)] -> id: tl_template_soal--53161_text]
+Session ID: e5f94f568fb3d80c1478724f2d576809
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:113)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
+at jdk.proxy2/jdk.proxy2.$Proxy32.sendKeys(Unknown Source)
+at com.sqa.psikotes.framework.page.ModulPage.clickFieldGambar(ModulPage.java:204)
+at com.sqa.psikotes.framework.runner.TestMPAddSoalPilihanGandaValid.tsmp009_admin_input_soal_pilihan_a_pilihan_b_pilihan_c_pilihan_d_pilihan_e_kunci_jawaban_dan_file_gambar(TestMPAddSoalPilihanGandaValid.java:43)
+at ✽.TSMP009 Admin input soal, pilihan A, pilihan B, pilihan C, pilihan D, pilihan E, A dan .\data\kode-ascii.png(file:///C:/Users/NEXSOFT/git/TAAyu/TAAyu/src/main/resources/features/200MPAddSoalPilihanGandaValid.feature:11)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:com.sqa.psikotes.framework.runner.TestRunner@196a42c3]" started-at="2022-10-05T10:09:05 WIB" name="tearDownClass" finished-at="2022-10-05T10:09:06 WIB" duration-ms="413" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- com.sqa.psikotes.framework.runner.TestRunner -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
